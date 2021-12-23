@@ -60,7 +60,7 @@ header {
 	margin-bottom: 0px;
 }
 .thumbnail {
-	width: 23%;
+	width: 47%;
 	text-align: center;
 	float: left;
 	margin-top: 35px;
@@ -160,8 +160,8 @@ header {
 }
 footer {
 	background-color: #B3B3B3;
-	padding-top: 60px;
-	padding-bottom: 60PX;
+	/*padding-top: 60px;
+	  padding-bottom: 60PX;*/
 }
 .intro {
 	display: inline-block;
