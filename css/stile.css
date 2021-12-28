@@ -2,11 +2,12 @@
 
 .graphs{
     width: 100%;
+	height: auto;
     height: auto;
     max-width: 400px;
-    max-height: 200px;
 	margin: auto;
 }
 .graphs div{
 	margin: auto;
+
 }
