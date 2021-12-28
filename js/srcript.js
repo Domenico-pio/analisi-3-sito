@@ -1,7 +1,7 @@
 // JavaScript Document
 
 // prima funzione
-var fileName="geo/funzione1.ggb";
+var fileName="geo/analisi3.ggb";
 
 var parameters = {
 "id":"applet",
