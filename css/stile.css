@@ -1,10 +1,8 @@
 /* CSS Document */
 
 .graphs{
-    width: 100%;
-	height: auto;
-    height: auto;
-    max-width: 400px;
+    width: 98%;
+	height: auto;    
 	margin: auto;
 }
 .graphs div{
