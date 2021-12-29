@@ -2,7 +2,7 @@
 
 // prima funzione
 var fileName="geo/funzione1.ggb";
-
+var frist = true;
 var parameters = {
 "id":"applet",
 "scaleContainerClass": 'graphs',
@@ -289,19 +289,6 @@ var applet5 = new GGBApplet(parameters5, views);
 var appletEx= new GGBApplet(parametersEx, views);
 var appletEx2= new GGBApplet(parametersEx2, views);
 var appletEx3= new GGBApplet(parametersEx3, views);
-
-function cambia(){
-	var item=document.getElementById("select").value;
-	fileName="geo/"+item;
-	//onsole.log(fileName);
-	//plots();
-	applet.openFile(fileName);
-	applet2.openFile(fileName);
-	applet3.openFile(fileName);
-	applet4.openFile(fileName);
-	applet5.openFile(fileName);
-	
-}
 function plots(){
 		//console.log(parameters);
 		//console.log(parameters2);
@@ -317,11 +304,34 @@ function plots(){
 		applet5.inject('ggbApplet5');
 	}
 
+function cambia(){
+	
+	var gallery=document.getElementById("confronto")
+	if(frist){
+		gallery.style.display="";
+		
+		plots();
+		frist=false;
+		console.log(frist);
+	}else{
+		//gallery.style.display="";
+		var item=document.getElementById("select").value;
+		fileName="geo/"+item;
+		//console.log(frist);
+		//plots();
+		applet.openFile(fileName);
+		applet2.openFile(fileName);
+		applet3.openFile(fileName);
+		applet4.openFile(fileName);
+		applet5.openFile(fileName);
+	};
+}
+
 window.onload=function (){
 	appletEx.inject('ggbExemple');
 	appletEx2.inject('ggbExemple2');
 	appletEx3.inject('ggbExemple3');
-	plots();
+	//plots();
 };
 
 
