@@ -9,3 +9,18 @@
 	margin: auto;
 
 }
+.intro{
+	text-align: center;
+}
+select {
+	max-width: 80%;
+	margin: auto;
+}
+
+.definizione p{
+	text-align: justify;
+	color: black;
+}
+svg {
+	max-width: 100%;
+}

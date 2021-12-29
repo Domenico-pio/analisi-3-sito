@@ -9,10 +9,20 @@
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap-4.4.1.js"></script>
-	<title>Light Theme</title>
-	<link href="css/simpleGridTemplate.css" rel="stylesheet" type="text/css">
+	<!--latex configuration-->
+	<script type="text/x-mathjax-config">
+		MathJax = {
+  			loader: {load: ['ui/lazy']}
+			};
+	</script>
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-svg.js"></script>
 	<link rel="stylesheet" href="css/stile.css"  type="text/css">
+	<link href="css/simpleGridTemplate.css" rel="stylesheet" type="text/css">
+	
 	<link href="css/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
+	
+	<title>Convergenze</title>
 </head>
 <body>
 <!-- Main Container -->
@@ -65,15 +75,42 @@
 	    <div id="ggbApplet" ></div>
       </div>
 	  <h4>Convergenza puntuale</h4>
-	  <p class="tag">HTML, CSS, JS, WordPress</p>
-	  <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		  <p class="tag"><a class="btn btn-primary" data-toggle="collapse" href="#collapseExample"  aria-expanded="false" aria-controls="collapseExample">
+		leggi definizione
+	  </a></p>
+		<div class="collapse" id="collapseExample">
+		  <div class="definizione card card-body">
+		    <p>DEFINZIONE FORMALE:</p>
+		    <p>Si dice che \(f_n\) converge puntualmente a \(f\:su\:X  ⇔  ∀ x\in X\;vale\;(|f_n(x)-f(x)|)=0 \)
+		      Ovvero se in ogni punto x il limite della successione di funzioni è il valore della funzione \(f\) in \(x\). </p>
+			<p> DEFINIZIONE PRATICA:</p>
+			  <p>Una successione di funzioni converge puntualmente se per ogni punto \(x\) il limite della successione di funzioni corrisponde al valore della funzione \(f\) in \(x\)</p>
+          </div>
+		  </div>
+		 
+		<div>
+	  		<p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		</div>
     </div>
 	<div class="thumbnail">
 	  <div class="graphs">
 	    <div id="ggbApplet2" ></div>
       </div>
 	  <h4>Convergenza Uniforme</h4>
-	  <p class="tag">HTML, CSS, JS, WordPress</p>
+
+	  <p class="tag"><a class="btn btn-primary" data-toggle="collapse" href="#collapseExample2"  aria-expanded="false" aria-controls="collapseExample"> leggi definizione </a></p>
+	  <div class="collapse" id="collapseExample2">
+	    <div class="card card-body">
+	      <p>DEFINZIONE FORMALE:
+	        Si dice che fn converge puntualmente a f su X  ⇔  ∀ x ∈ X vale 
+	        (|fnx-fx|)=0 
+	        Ovvero se in ogni punto x il limite della successione di funzioni è il valore della funzione f in x.
+	        </p>
+			<p>DEFINIZIONE PRATICA:
+	        Una successione di funzioni converge puntualmente se per ogni punto x il limite della successione di funzioni corrisponde al valore della funzione f in x</p>
+        </div>
+      </div>
+	  
 	  <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     </div>
 	<div class="thumbnail">
@@ -81,7 +118,20 @@
 	    <div id="ggbApplet3" ></div>
       </div>
 	  <h4>Convergenza quasi ovunque</h4>
-	  <p class="tag">HTML, CSS, JS, WordPress</p>
+
+	  <p class="tag"><a class="btn btn-primary" data-toggle="collapse" href="#collapseExample3"  aria-expanded="false" aria-controls="collapseExample"> leggi definizione </a></p>
+	  <div class="collapse" id="collapseExample3">
+	    <div class="card card-body">
+	      <p>DEFINZIONE FORMALE:
+	        Si dice che fn converge puntualmente a f su X  ⇔  ∀ x ∈ X vale 
+	        (|fnx-fx|)=0 
+	        Ovvero se in ogni punto x il limite della successione di funzioni è il valore della funzione f in x.
+	        
+	        DEFINIZIONE PRATICA:
+	        Una successione di funzioni converge puntualmente se per ogni punto x il limite della successione di funzioni corrisponde al valore della funzione f in x </p>
+        </div>
+      </div>
+	  
 	  <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     </div>
 	<div class="thumbnail">
@@ -89,7 +139,20 @@
 	    <div id="ggbApplet4" ></div>
       </div>
 	  <h4>Convergenza in L^1</h4>
-	  <p class="tag">HTML, CSS, JS, WordPress</p>
+
+	  <p class="tag"><a class="btn btn-primary" data-toggle="collapse" href="#collapseExample4"  aria-expanded="false" aria-controls="collapseExample"> leggi definizione </a></p>
+	  <div class="collapse" id="collapseExample4">
+	    <div class="card card-body">
+	      <p>DEFINZIONE FORMALE:
+	        Si dice che fn converge puntualmente a f su X  ⇔  ∀ x ∈ X vale 
+	        (|fnx-fx|)=0 
+	        Ovvero se in ogni punto x il limite della successione di funzioni è il valore della funzione f in x.
+	        
+	        DEFINIZIONE PRATICA:
+	        Una successione di funzioni converge puntualmente se per ogni punto x il limite della successione di funzioni corrisponde al valore della funzione f in x </p>
+        </div>
+      </div>
+	  
 	  <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     </div>
 	<div class="thumbnail">
@@ -97,7 +160,20 @@
 	    <div id="ggbApplet5" ></div>
       </div>
 	  <h4>Convergenza in misura</h4>
-	  <p class="tag">HTML, CSS, JS, WordPress</p>
+
+	  <p class="tag"><a class="btn btn-primary" data-toggle="collapse" href="#collapseExample5"  aria-expanded="false" aria-controls="collapseExample"> leggi definizione </a></p>
+	  <div class="collapse" id="collapseExample5">
+	    <div class="card card-body">
+	      <p>DEFINZIONE FORMALE:
+	        Si dice che fn converge puntualmente a f su X  ⇔  ∀ x ∈ X vale 
+	        (|fnx-fx|)=0 
+	        Ovvero se in ogni punto x il limite della successione di funzioni è il valore della funzione f in x.
+	        
+	        DEFINIZIONE PRATICA:
+	        Una successione di funzioni converge puntualmente se per ogni punto x il limite della successione di funzioni corrisponde al valore della funzione f in x </p>
+        </div>
+      </div>
+	  
 	  <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     </div>
 	
