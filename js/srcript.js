@@ -1,7 +1,7 @@
 // JavaScript Document
 
 // prima funzione
-var fileName="geo/analisi3.ggb";
+var fileName="geo/funzione1.ggb";
 
 var parameters = {
 "id":"applet",
@@ -12,7 +12,7 @@ var parameters = {
 "showResetIcon":false,
 //"customToolBar":"0 77 73 62 | 1 501 67 , 5 19 , 72 75 76 | 2 15 45 , 18 65 , 7 37 | 4 3 8 9 , 13 44 , 58 , 47 | 16 51 64 , 70 | 10 34 53 11 , 24  20 22 , 21 23 | 55 56 57 , 12 | 36 46 , 38 49  50 , 71  14  68 | 30 29 54 32 31 33 | 25 17 26 60 52 61 | 40 41 42 , 27 28 35 , 6",
 "showToolBarHelp":false,
-"enableLabelDrags":false,
+"enableLabelDrags":true,
 "enableShiftDragZoom":false,
 "enableRightClick":false,
 "errorDialogsActive":false,
@@ -127,7 +127,7 @@ var parameters4 = {
 "showZoomButtons":false,
 "capturingThreshold":3,
 // add code here to run when the applet starts
-//"appletOnLoad":function(api){ api.setVisible('a',true) },
+"appletOnLoad":function(api){ api.setVisible('h',false); api.setVisible('p',false);api.setVisible('epsilon',false);api.setVisible('b',true);  },
 "showFullscreenButton":false,
 "scale":1,
 "disableAutoScale":false,
@@ -177,6 +177,108 @@ var parameters5 = {
 // use this instead of ggbBase64 to load a .ggb file
 "filename":fileName,
 };
+var parametersEx = {
+
+"scaleContainerClass": 'graphs',
+"showMenuBar":false,
+"showAlgebraInput":false,
+"showToolBar":false,
+"showResetIcon":false,
+//"customToolBar":"0 77 73 62 | 1 501 67 , 5 19 , 72 75 76 | 2 15 45 , 18 65 , 7 37 | 4 3 8 9 , 13 44 , 58 , 47 | 16 51 64 , 70 | 10 34 53 11 , 24  20 22 , 21 23 | 55 56 57 , 12 | 36 46 , 38 49  50 , 71  14  68 | 30 29 54 32 31 33 | 25 17 26 60 52 61 | 40 41 42 , 27 28 35 , 6",
+"showToolBarHelp":false,
+"enableLabelDrags":false,
+"enableShiftDragZoom":false,
+"enableRightClick":false,
+"errorDialogsActive":false,
+"useBrowserForJS":false,
+"allowStyleBar":false,
+"preventFocus":true,
+"showZoomButtons":false,
+"capturingThreshold":3,
+// add code here to run when the applet starts
+//"appletOnLoad":function(api){ api.setVisible('a',true) },
+"showFullscreenButton":false,
+"scale":1,
+"disableAutoScale":false,
+"allowUpscale":false,
+"clickToLoad":false,
+"appName":"classic",
+"buttonRounding":0.7,
+"buttonShadows":false,
+"language":"it",
+// use this instead of ggbBase64 to load a material from geogebra.org
+// "material_id":"RHYH3UQ8",
+// use this instead of ggbBase64 to load a .ggb file
+"filename":"geo/esempio1.ggb",
+};
+var parametersEx2 = {
+
+"scaleContainerClass": 'graphs',
+"showMenuBar":false,
+"showAlgebraInput":false,
+"showToolBar":false,
+"showResetIcon":false,
+//"customToolBar":"0 77 73 62 | 1 501 67 , 5 19 , 72 75 76 | 2 15 45 , 18 65 , 7 37 | 4 3 8 9 , 13 44 , 58 , 47 | 16 51 64 , 70 | 10 34 53 11 , 24  20 22 , 21 23 | 55 56 57 , 12 | 36 46 , 38 49  50 , 71  14  68 | 30 29 54 32 31 33 | 25 17 26 60 52 61 | 40 41 42 , 27 28 35 , 6",
+"showToolBarHelp":false,
+"enableLabelDrags":false,
+"enableShiftDragZoom":false,
+"enableRightClick":false,
+"errorDialogsActive":false,
+"useBrowserForJS":false,
+"allowStyleBar":false,
+"preventFocus":true,
+"showZoomButtons":false,
+"capturingThreshold":3,
+// add code here to run when the applet starts
+//"appletOnLoad":function(api){ api.setVisible('a',true) },
+"showFullscreenButton":false,
+"scale":1,
+"disableAutoScale":false,
+"allowUpscale":false,
+"clickToLoad":false,
+"appName":"classic",
+"buttonRounding":0.7,
+"buttonShadows":false,
+"language":"it",
+// use this instead of ggbBase64 to load a material from geogebra.org
+// "material_id":"RHYH3UQ8",
+// use this instead of ggbBase64 to load a .ggb file
+"filename":"geo/esempio2.ggb",
+};
+var parametersEx3 = {
+
+"scaleContainerClass": 'graphs',
+"showMenuBar":false,
+"showAlgebraInput":false,
+"showToolBar":false,
+"showResetIcon":false,
+//"customToolBar":"0 77 73 62 | 1 501 67 , 5 19 , 72 75 76 | 2 15 45 , 18 65 , 7 37 | 4 3 8 9 , 13 44 , 58 , 47 | 16 51 64 , 70 | 10 34 53 11 , 24  20 22 , 21 23 | 55 56 57 , 12 | 36 46 , 38 49  50 , 71  14  68 | 30 29 54 32 31 33 | 25 17 26 60 52 61 | 40 41 42 , 27 28 35 , 6",
+"showToolBarHelp":false,
+"enableLabelDrags":false,
+"enableShiftDragZoom":false,
+"enableRightClick":false,
+"errorDialogsActive":false,
+"useBrowserForJS":false,
+"allowStyleBar":false,
+"preventFocus":true,
+"showZoomButtons":false,
+"capturingThreshold":3,
+// add code here to run when the applet starts
+//"appletOnLoad":function(api){ api.setVisible('a',true) },
+"showFullscreenButton":false,
+"scale":1,
+"disableAutoScale":false,
+"allowUpscale":false,
+"clickToLoad":false,
+"appName":"classic",
+"buttonRounding":0.7,
+"buttonShadows":false,
+"language":"it",
+// use this instead of ggbBase64 to load a material from geogebra.org
+// "material_id":"RHYH3UQ8",
+// use this instead of ggbBase64 to load a .ggb file
+"filename":"geo/esempio3.ggb",
+};
 // is3D=is 3D applet using 3D view, AV=Algebra View, SV=Spreadsheet View, CV=CAS View, EV2=Graphics View 2, CP=Construction Protocol, PC=Probability Calculator DA=Data Analysis, FI=Function Inspector, macro=Macros
 var views = {'is3D': 0,'AV': 0,'SV': 0,'CV': 0,'EV2': 0,'CP': 0,'PC': 0,'DA': 0,'FI': 0,'macro': 0};
 var applet = new GGBApplet(parameters,views);
@@ -184,6 +286,9 @@ var applet2 = new GGBApplet(parameters2,views);
 var applet3 = new GGBApplet(parameters3, views);
 var applet4 = new GGBApplet(parameters4, views);
 var applet5 = new GGBApplet(parameters5, views);
+var appletEx= new GGBApplet(parametersEx, views);
+var appletEx2= new GGBApplet(parametersEx2, views);
+var appletEx3= new GGBApplet(parametersEx3, views);
 
 function cambia(){
 	var item=document.getElementById("select").value;
@@ -212,7 +317,12 @@ function plots(){
 		applet5.inject('ggbApplet5');
 	}
 
-window.onload=plots;
+window.onload=function (){
+	appletEx.inject('ggbExemple');
+	appletEx2.inject('ggbExemple2');
+	appletEx3.inject('ggbExemple3');
+	plots();
+};
 
 
 
