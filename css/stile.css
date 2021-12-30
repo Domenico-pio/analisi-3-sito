@@ -24,3 +24,6 @@ select {
 svg {
 	max-width: 100%;
 }
+.col-auto{
+	background-color: #F8F8F8;
+}

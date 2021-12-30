@@ -61,7 +61,7 @@ header {
 .thumbnail {
 	width: 48%;
 	text-align: center;
-	float: right;
+	float: left;
 	margin-top: 35px;
 	background-color: #F8F8F8;
 	padding-bottom: 20px;

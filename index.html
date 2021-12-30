@@ -35,84 +35,78 @@
 	
   <section class="intro">
 	<div class="column">
-			<h4>Un po' di teoria </h4>
+			<h3> Un po' di teoria... </h3>
 	</div>
   </section>
-  <div class="text_column">
-		<h6>CONVERGENZE</h6>
+  <div class="col-auto ">
 		<p>
-		CONVERGENZA PUNTUALE
+	<h5>CONVERGENZA PUNTUALE</h5>
 
-		DEFINZIONE FORMALE:
-		Si dice che fn converge puntualmente a f su X  ⇔  ∀ x ∈ X vale 
-		(|fnx-fx|)=0 
-		Ovvero se in ogni punto x il limite della successione di funzioni è il valore della funzione f in x.
+		<h6>DEFINZIONE FORMALE:</h6>
+		<p>Si dice che \(f_n\) converge puntualmente a \(f\) su \(X\) se e solo se \(\forall\;x\in X\) vale: 
+		\[(|f_n(x)-f(x)|)=0\]
+		Ovvero se in ogni punto \(x\) il limite della successione di funzioni è il valore della funzione \(f\) in \(x\).</p>
 
-		DEFINIZIONE PRATICA:
-		Una successione di funzioni converge puntualmente se per ogni punto x il limite della successione di funzioni corrisponde al valore della funzione f in x
-
-
-		CONVERGENZA UNIFORME
-
-		DEFINZIONE FORMALE:
-		Si dice che fn converge uniformemente a f su X  ⇔  ∀ x ∈ X vale 
-		(supxX|fnx-fx|)=0 
-		Ovvero se definitivamente per n→∞ il grafico di fn è compreso nell’intorno tubolare tra f-ε e f+ε
+		<h6>DEFINIZIONE PRATICA:</h6>
+		<p>Una successione di funzioni converge puntualmente se per ogni punto \(x\) il limite della successione di funzioni corrisponde al valore della funzione \(f\) in \(x\)</p>
 
 
-		DEFINIZIONE PRATICA: Una successione di funzioni converge uniformemente se definitivamente per n→∞ il grafico di fn è compreso nell’intorno tubolare tra f-ε e f+ε
+		<h5>CONVERGENZA UNIFORME</h5>
 
+	<h6>DEFINZIONE FORMALE:</h6>
+		<p>Si dice che \(f_n\) converge uniformemente a \(f\) su \(X\)  se e solo se  \(\forall\;x\in X\) vale; 
+		\[\lim_{n\to\infty}\left(\sup_{x\in X}|f_n(x)-f(x)|\right) \]
+		Ovvero se definitivamente per \(n\to\infty\) il grafico di \(f_n\) è compreso nell’intorno tubolare tra \(f(x)-\epsilon\) e \(f(x)+\epsilon\)</p>
 
-		CONVERGENZA QUASI OVUNQUE
+		<h6>DEFINIZIONE PRATICA:</h6>
+		 <p>Una successione di funzioni converge uniformemente se definitivamente per  \(n\to\infty\) il grafico di \(f_n\) è compreso nell’intorno tubolare tra  \(f(x)-\epsilon\) e \(f(x)+\epsilon\)</p>
 
-		DEFINZIONE FORMALE:
-		Si dice che fn converge a f  quasi ovunque  ⇔  
+		<h5>CONVERGENZA QUASI OVUNQUE</h5>
+		<h6>DEFINZIONE FORMALE:</h6>
+	
+		<p>Si dice che \(f_n\) converge a \(f\)  quasi ovunque  se e solo se 
+	  	\[\mu\left(\left\{x\in X\: :\; \lim_{n\to \infty}(|f_n(x)-f(x)|)\neq0\right\}\right)=0\]
 
-		Ovvero se l’insieme dei punti in cui non c’è convergenza puntuale ha misura nulla.
+		Ovvero se l’insieme dei punti in cui non c’è convergenza puntuale ha misura nulla.</p>
+		
+	  	<h6>DEFINIZIONE PRATICA:</h6>
+	  	<p>Una successione di funzioni converge quasi ovunque se l’insieme dei punti in cui non c’è convergenza puntuale ha misura nulla.</p>
+		
+	  	<h5>CONVERGENZA IN \(L^1\)</h5>
+		<h6>DEFINZIONE FORMALE:</h6>
+		<p>Si dice che \(f_n\) converge a \(f\) in \(L^1\) se e solo se: 
+			\[\lim_{n\to \infty}\int_X |f_n(x)-f(x)|\:d\mu\]
+		
+		Ovvero se all’aumentare di \(n\) l’area compresa tra \(f_n\) e \(f\) tende a 0. Questo consente di avere dei picchi che si distanziano dalla funzione limite, l’importante è che abbiano area piccola.</p>
+		<h6>DEFINIZIONE PRATICA:</h6>
+		 <p>Una successione di funzioni convergono in \(L^1\) se all’aumentare di \(n\) l’area compresa tra \(f_n\) e \(f\) tende a 0.</p>
 
-
-
-		DEFINIZIONE PRATICA:
-		Una successione di funzioni converge quasi ovunque se l’insieme dei punti in cui non c’è convergenza puntuale ha misura nulla.
-
-		CONVERGENZA IN L1
-
-		DEFINZIONE FORMALE:
-		Si dice che fn converge a f in L1  ⇔  
-		∫X|fn-f|dµ=0 
-		Ovvero se all’aumentare di n l’area compresa tra fn e f tende a 0. Questo consente di avere dei picchi che si distanziano dalla funzione limite, l’importante è che abbiano area piccola.
-
-		DEFINIZIONE PRATICA: Una successione di funzioni convergono in L1 se all’aumentare di n l’area compresa tra fn e f tende a 0.
-
-
-		CONVERGENZA IN MISURA
-
-		DEFINZIONE FORMALE:
-		Si dice che fn converge a f  in misura  ⇔  ∀ ε &ang; 0 vale
-		n→∞({xX:|fn(x)-f(x)|})=0 
-		Ovvero se la misura dell’insieme dei punti della funzione che non sono contenuti nell’intorno tubolare di f tende a 0.
-
-
-
-		DEFINIZIONE PRATICA:
-		Una successione di funzioni converge in misura se la misura dell’insieme dei punti della funzione che non sono contenuti nell’intorno tubolare di f tende a 0.
+		<h5>CONVERGENZA IN MISURA</h5>
+		<h6>DEFINZIONE FORMALE:</h6>
+		<p>Si dice che \(f_n\) converge a \(f\)  in misura  se e solo se \(\forall \epsilon<0\) vale:
+							\[\lim_{n\to \infty}\mu\left(\left\{x\in X:(|f_n(x)-f(x)|)\geq\epsilon\right\}\right)=0\]																	
+		Ovvero se la misura dell’insieme dei punti della funzione che non sono contenuti nell’intorno tubolare di \(f\) tende a 0.</p>
+		
+		<h6>DEFINIZIONE PRATICA:</h6>	
+		<p>	Una successione di funzioni converge in misura se la misura dell’insieme dei punti della funzione che non sono contenuti nell’intorno tubolare di \(f\) tende a 0.</p>
 		</p>
-		<h6>IMPLICAZIONI:</h6>
-		<p>UNIFORME  ⇒  PUNTUALE  ⇒  	 QUASI OVUNQUE
-			IN L1 ⇒  IN MISURA
+		<h5>IMPLICAZIONI:</h5>
+		<p>possimo osservare diverse inplicazioni:<\br>UNIFORME  ⇒  PUNTUALE  ⇒  	 QUASI OVUNQUE
+			IN \(L^1\) ⇒  IN MISURA</p>
 
+		<h5>Casi Particolari:</h5>
+		<p>
 
-			Casi Particolari:
+			QUASI OVUNQUE + se il dominio ha misura finita, a meno di restringersi a un sottoinsieme di misura arbitrariamente vicina a quella del dominio iniziale (TEOREMA DI EGOROV)  ⇒ UNIFORME</p>
 
-			QUASI OVUNQUE + se il dominio ha misura finita, a meno di restringersi a un sottoinsieme di misura arbitrariamente vicina a quella del dominio iniziale (TEOREMA DI EGOROV)  ⇒ UNIFORME
+		<p>	QUASI OVUNQUE + 1) se la successione ha una dominazione uniforme integrabile (TEOREMA DI CONVERGENZA DOMINATA) + 2) se la successione è crescente positiva (TEOREMA DI CONVERGENZA MONOTONA) ⇒ IN \(L^1\)  </p>
 
-			QUASI OVUNQUE + 1) se la successione ha una dominazione uniforme integrabile (TEOREMA DI CONVERGENZA DOMINATA) + 2) se la successione è crescente positiva (TEOREMA DI CONVERGENZA MONOTONA) ⇒ IN L1  
-
-			QUASI OVUNQUE + se il dominio ha misura finita ⇒ IN MISURA
-
-			UNIFORME + se il dominio ha misura finita  ⇒ IN L1  
-
-			IN L1  + a meno di estrarre una sottosuccessione (TEOREMA INVERSO DI CONVERGENZA DOMINATA) ⇒ QUASI OVUNQUE
+	<p>QUASI OVUNQUE + se il dominio ha misura finita ⇒ IN MISURAp</p>
+			<p>
+			UNIFORME + se il dominio ha misura finita  ⇒ IN \(L^1\)
+	</p>
+<p>
+			IN \(L^1\)  + a meno di estrarre una sottosuccessione (TEOREMA INVERSO DI CONVERGENZA DOMINATA) ⇒ QUASI OVUNQUE
 			</p>
 	</div>
   
@@ -122,16 +116,8 @@
 			<p>qui vi proponiamo vari esempi di convergenza di succesioni non banali </p> <p>gli esempi sono tratti dal folland</p>
 		</div>
 	</section>
+  
   <div class="gallery">
-    <div class="thumbnail">
-      <div class="graphs">
-        <div id="ggbExemple"></div>
-      </div>
-      <h4>titolo</h4>
-      <div>
-        <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      </div>
-    </div>
     <div class="thumbnail">
       <div class="graphs">
         <div id="ggbExemple2"></div>
@@ -144,6 +130,15 @@
     <div class="thumbnail">
       <div class="graphs">
         <div id="ggbExemple3"></div>
+      </div>
+      <h4>titolo</h4>
+      <div>
+        <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+    </div>
+    <div class="thumbnail">
+      <div class="graphs">
+        <div id="ggbExemple"></div>
       </div>
       <h4>titolo</h4>
       <div>
