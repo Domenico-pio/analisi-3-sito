@@ -292,7 +292,20 @@ var applet5 = new GGBApplet(parameters5, views);
 var appletEx= new GGBApplet(parametersEx, views);
 var appletEx2= new GGBApplet(parametersEx2, views);
 var appletEx3= new GGBApplet(parametersEx3, views);
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+    myFunction(this);
+    }
+};
+xhttp.open("GET", "test.xml", true);
+xhttp.send();
 
+function myFunction(xml) {
+    var xmlDoc = xml.responseXML;
+		var text=xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+		console.log(text);
+}
 function plots(){
 		//console.log(parameters);
 		//console.log(parameters2);
@@ -310,7 +323,7 @@ function plots(){
 
 function cambia(){
 
-	var gallery=document.getElementById("confronto")
+	var gallery=document.getElementById("confronto");
 	if(frist){
 		var item=document.getElementById("select").value;
 		fileName="geo/"+item;
@@ -337,5 +350,6 @@ window.onload=function (){
 	appletEx2.inject('ggbExemple2');
 	appletEx3.inject('ggbExemple3');
 	//plots();
-
+	// var text=document.getElementById("prova").innerHTML;
+	// console.log(text);
 };
