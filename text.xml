@@ -6,15 +6,15 @@
     <formula>\(f_n(x)=\sqrt{x+\frac{1}{n}}\)</formula>
     <text>
       <desc>Graficamente si vede che \(f_n(x)\) è compresa in una fascia \( f_(x) −\epsilon, f(x)+\epsilon\) con epsilon arbitrario, maggiore di 0 e \(f(x) =|x|\).</desc>
-      <desc>2</desc>
-      <desc>3</desc>
-      <desc>4</desc>
-      <desc>5</desc>
+      <desc>Graficamente vediamo che la convergenza vale in ogni punto di \(\Re\)</desc>
+      <desc>Graficamente vediamo che la convergenza vale in ogni punto di \(\Re\)</desc>
+      <desc>Graficamente si può vedere che \(f_n(x)\) si discostano da \(f(x)\) solo per valori di x presi in un intorno arbitrario di \(x=0\) che di conseguenza hanno misura nulla. </desc>
+      <desc>Graficamente si vede che converge anche in \(L^1\) dato che l’area compresa tra \(f(x)=|x|\) e \(f_n(x)\) tende a zero al crescere di \(n\).</desc>
     </text>
   </funzione>
   <funzione>
     <option value="">2</option>
-    <fileName>analisi3.ggb</fileName>
+    <fileName>funzione2.ggb</fileName>
     <formula> </formula>
     <text>
       <desc>1</desc>
@@ -26,7 +26,7 @@
   </funzione>
   <funzione>
     <option value="">3</option>
-    <fileName> </fileName>
+    <fileName>funzione3.ggb</fileName>
     <formula> </formula>
     <text>
       <desc> </desc>
@@ -38,7 +38,7 @@
   </funzione>
   <funzione>
     <option value="">4</option>
-    <fileName> </fileName>
+    <fileName>analisi3.ggb</fileName>
     <formula> </formula>
     <text>
       <desc> </desc>
