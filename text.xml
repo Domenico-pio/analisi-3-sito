@@ -11,6 +11,7 @@
       <desc>Graficamente si può vedere che \(f_n(x)\) si discostano da \(f(x)\) solo per valori di x presi in un intorno arbitrario di \(x=0\) che di conseguenza hanno misura nulla. </desc>
       <desc>Graficamente si vede che converge anche in \(L^1\) dato che l’area compresa tra \(f(x)=|x|\) e \(f_n(x)\) tende a zero al crescere di \(n\).</desc>
     </text>
+    
   </funzione>
   <funzione>
     <option value="">2</option>
