@@ -1,7 +1,7 @@
 // JavaScript Document
 
 // prima funzione
-var fileName="geo/funzione1.ggb";
+var fileName;//="geo/funzione1.ggb";
 var frist = true;
 var parameters = {
 "id":"applet",
@@ -293,19 +293,34 @@ var appletEx= new GGBApplet(parametersEx, views);
 var appletEx2= new GGBApplet(parametersEx2, views);
 var appletEx3= new GGBApplet(parametersEx3, views);
 var xhttp = new XMLHttpRequest();
-xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-    myFunction(this);
-    }
-};
-xhttp.open("GET", "test.xml", true);
-xhttp.send();
 
-function myFunction(xml) {
+
+function writeText(xml,option) {
     var xmlDoc = xml.responseXML;
-		var text=xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
-		console.log(text);
+		// var x = xmlDoc.getElementsByTagName("fileName")[0].childNodes[0];
+		//var y = x.childNodes[0];
+		// var file = x.nodeValue;
+		//var x=xlmDoc.getElementsByTagName("funzione")];
+		var text = xmlDoc.getElementsByTagName("text")[option-1].getElementsByTagName("desc");
+		var formula=xmlDoc.getElementsByTagName("formula")[option-1].childNodes[0];
+		var file=xmlDoc.getElementsByTagName("fileName")[option-1].childNodes[0];
+		//document.getElementById("formula").innerHTML=formula.nodeValue='\\[\\f_n(x)=\\sqrt{x+\\frac{1}{n}}\\]';
+		document.getElementById("formula").innerHTML=formula.nodeValue;
+		MathJax.typesetPromise().then(() => {
+  	// modify the DOM here
+		for (var i = 1; i < 6; i++) {
+			console.log(text[i-1].childNodes[0].nodeValue);
+			document.getElementById("ggbApplet"+i+"text").innerHTML= text[i-1].childNodes[0].nodeValue;
+		}
+  	MathJax.typesetPromise();
+		}).catch((err) => console.log(err.message));
+
+		return file.nodeValue;
+
 }
+
+
+
 function plots(){
 		//console.log(parameters);
 		//console.log(parameters2);
@@ -322,26 +337,41 @@ function plots(){
 	}
 
 function cambia(){
-
 	var gallery=document.getElementById("confronto");
-	if(frist){
-		var item=document.getElementById("select").value;
-		fileName="geo/"+item;
-		gallery.style.display="";
-
-		plots();
-		frist=false;
-		console.log(frist);
-	}else{
-		//gallery.style.display="";
-
-		//console.log(frist);
-		//plots();
-		applet.openFile(fileName);
-		applet2.openFile(fileName);
-		applet3.openFile(fileName);
-		applet4.openFile(fileName);
-		applet5.openFile(fileName);
+	var option=document.getElementById("select").value;
+	var item;
+	xhttp.open("GET", "text.xml", true);
+	xhttp.send();
+	xhttp.onreadystatechange=function(){
+		if (this.readyState == 4 && this.status == 200) {
+			 item=writeText(this,option);
+			 //console.log("prim "+fileName);
+			 fileName="geo/"+item;
+			 if(frist){
+			 		//onsole.log(fileName);
+			 		gallery.style.display="";
+					parameters.filename=fileName;
+					parameters2.filename=fileName;
+					parameters3.filename=fileName;
+					parameters4.filename=fileName;
+					parameters5.filename=fileName;
+			 		plots();
+			 		frist=false;
+			 		//console.log(frist);
+		 	}else{
+			 		//gallery.style.display="";
+			 		//console.log(fileName+" in ");
+			 		//console.log(frist);
+			 		//plots();
+			 		applet.openFile(fileName);
+			 		applet2.openFile(fileName);
+			 		applet3.openFile(fileName);
+			 		applet4.openFile(fileName);
+			 		applet5.openFile(fileName);
+		 	};
+		}else {
+			console.log(this.status);
+		}
 	};
 }
 
@@ -352,4 +382,6 @@ window.onload=function (){
 	//plots();
 	// var text=document.getElementById("prova").innerHTML;
 	// console.log(text);
+
+
 };

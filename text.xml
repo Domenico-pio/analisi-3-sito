@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<file>
+  <funzione>
+    <option value="">1</option>
+    <fileName>funzione1.ggb</fileName>
+    <formula>\(f_n(x)=\sqrt{x+\frac{1}{n}}\)</formula>
+    <text>
+      <desc>Graficamente si vede che \(f_n(x)\) è compresa in una fascia \( f_(x) −\epsilon, f(x)+\epsilon\) con epsilon arbitrario, maggiore di 0 e \(f(x) =|x|\).</desc>
+      <desc>2</desc>
+      <desc>3</desc>
+      <desc>4</desc>
+      <desc>5</desc>
+    </text>
+  </funzione>
+  <funzione>
+    <option value="">2</option>
+    <fileName>analisi3.ggb</fileName>
+    <formula> </formula>
+    <text>
+      <desc>1</desc>
+      <desc>2</desc>
+      <desc>3</desc>
+      <desc>4</desc>
+      <desc>5</desc>
+    </text>
+  </funzione>
+  <funzione>
+    <option value="">3</option>
+    <fileName> </fileName>
+    <formula> </formula>
+    <text>
+      <desc> </desc>
+      <desc> </desc>
+      <desc> </desc>
+      <desc> </desc>
+      <desc> </desc>
+    </text>
+  </funzione>
+  <funzione>
+    <option value="">4</option>
+    <fileName> </fileName>
+    <formula> </formula>
+    <text>
+      <desc> </desc>
+      <desc> </desc>
+      <desc> </desc>
+      <desc> </desc>
+      <desc> </desc>
+    </text>
+  </funzione>
+  <funzione>
+    <option value="">5</option>
+    <fileName> </fileName>
+    <formula> </formula>
+    <text>
+      <desc> </desc>
+      <desc> </desc>
+      <desc> </desc>
+      <desc> </desc>
+      <desc> </desc>
+    </text>
+  </funzione>
+</file>
