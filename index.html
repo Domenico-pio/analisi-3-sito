@@ -9,146 +9,156 @@
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap-4.4.1.js"></script>
+	<script src="https://kit.fontawesome.com/667e5f8c98.js" crossorigin="anonymous"></script>
 	<!--latex configuration-->
-	<script type="text/x-mathjax-config">
+	<!-- <script type="text/x-mathjax-config">
 		MathJax = {
   			loader: {load: ['ui/lazy']}
 			};
-	</script>
+	</script> -->
 	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-svg.js"></script>
 	<link rel="stylesheet" href="css/stile.css"  type="text/css">
 	<link href="css/simpleGridTemplate.css" rel="stylesheet" type="text/css">
-	
+
 	<link href="css/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
-	
+
 	<title>Convergenze</title>
 </head>
 <body>
 <!-- Main Container -->
-<div class="container"> 
+<div class="container">
 	  <!-- Header -->
-	  <header class="header">
+<header class="header">
 		<h1 class="logo">CONVERGENZE</h1>
-	  </header>
-	  <!-- Hero Section -->
-	
-  <section class="intro">
-	<div class="column">
+</header>
+
+<!-- Hero Section -->
+<section class="intro">
+		<div class="column">
 			<h3> Un po' di teoria... </h3>
 	</div>
-  </section>
-  <div class="col-auto ">
-	<div class="teoria">	
-	<h5>CONVERGENZA PUNTUALE</h5>
+</section>
 
-		<h6>DEFINZIONE FORMALE:</h6>
-		<p>Si dice che \(f_n\) converge puntualmente a \(f\) su \(X\) se e solo se \(\forall\;x\in X\) vale: 
-		\[(|f_n(x)-f(x)|)=0\]
-		Ovvero se in ogni punto \(x\) il limite della successione di funzioni è il valore della funzione \(f\) in \(x\).</p>
+<div class="container">
+		<div class="row">
+      <div class="teoria col-md">
+        <h5>CONVERGENZA PUNTUALE</h5>
+        <h6>DEFINZIONE FORMALE:</h6>
+        <p>Si dice che \(f_n\) converge puntualmente a \(f\) su \(X\) se e solo se \(\forall\;x\in X\) vale:
+          \[(|f_n(x)-f(x)|)=0\]
+          Ovvero se in ogni punto \(x\) il limite della successione di funzioni è il valore della funzione \(f\) in \(x\).</p>
+        <h6>DEFINIZIONE PRATICA:</h6>
+        <p>Una successione di funzioni converge puntualmente se per ogni punto \(x\) il limite della successione di funzioni corrisponde al valore della funzione \(f\) in \(x\)</p>
+      </div>
+      <div class="teoria col-md">
+        <h5>CONVERGENZA UNIFORME</h5>
+        <h6>DEFINZIONE FORMALE:</h6>
+        <p>Si dice che \(f_n\) converge uniformemente a \(f\) su \(X\)  se e solo se  \(\forall\;x\in X\) vale;
+          \[\lim_{n\to\infty}\left(\sup_{x\in X}|f_n(x)-f(x)|\right) \]
+          Ovvero se definitivamente per \(n\to\infty\) il grafico di \(f_n\) è compreso nell’intorno tubolare tra \(f(x)-\epsilon\) e \(f(x)+\epsilon\)</p>
+        <h6>DEFINIZIONE PRATICA:</h6>
+        <p>Una successione di funzioni converge uniformemente se definitivamente per  \(n\to\infty\) il grafico di \(f_n\) è compreso nell’intorno tubolare tra  \(f(x)-\epsilon\) e \(f(x)+\epsilon\)</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="teoria col-md">
+        <h5>CONVERGENZA QUASI OVUNQUE</h5>
+        <h6>DEFINZIONE FORMALE:</h6>
+        <p>Si dice che \(f_n\) converge a \(f\)  quasi ovunque  se e solo se
+          \[\mu\left(\left\{x\in X\: :\; \lim_{n\to \infty}(|f_n(x)-f(x)|)\neq0\right\}\right)=0\]
 
-		<h6>DEFINIZIONE PRATICA:</h6>
-		<p>Una successione di funzioni converge puntualmente se per ogni punto \(x\) il limite della successione di funzioni corrisponde al valore della funzione \(f\) in \(x\)</p>
-	</div>
-	<div class="teoria">
-		<h5>CONVERGENZA UNIFORME</h5>
+          Ovvero se l’insieme dei punti in cui non c’è convergenza puntuale ha misura nulla.</p>
+        <h6>DEFINIZIONE PRATICA:</h6>
+        <p>Una successione di funzioni converge quasi ovunque se l’insieme dei punti in cui non c’è convergenza puntuale ha misura nulla.</p>
+      </div>
+      <div class="teoria col-md">
+        <h5>CONVERGENZA IN \(L^1\)</h5>
+        <h6>DEFINZIONE FORMALE:</h6>
+        <p>Si dice che \(f_n\) converge a \(f\) in \(L^1\) se e solo se:
+          \[\lim_{n\to \infty}\int_X |f_n(x)-f(x)|\:d\mu\]
 
-	<h6>DEFINZIONE FORMALE:</h6>
-		<p>Si dice che \(f_n\) converge uniformemente a \(f\) su \(X\)  se e solo se  \(\forall\;x\in X\) vale; 
-		\[\lim_{n\to\infty}\left(\sup_{x\in X}|f_n(x)-f(x)|\right) \]
-		Ovvero se definitivamente per \(n\to\infty\) il grafico di \(f_n\) è compreso nell’intorno tubolare tra \(f(x)-\epsilon\) e \(f(x)+\epsilon\)</p>
+          Ovvero se all’aumentare di \(n\) l’area compresa tra \(f_n\) e \(f\) tende a 0. Questo consente di avere dei picchi che si distanziano dalla funzione limite, l’importante è che abbiano area piccola.</p>
+        <h6>DEFINIZIONE PRATICA:</h6>
+        <p>Una successione di funzioni convergono in \(L^1\) se all’aumentare di \(n\) l’area compresa tra \(f_n\) e \(f\) tende a 0.</p>
+      </div>
+    </div>
+    <div class="row last_line">
+      <div class="teoria col-md">
+        <h5>CONVERGENZA IN MISURA</h5>
+        <h6>DEFINZIONE FORMALE:</h6>
+        <p>Si dice che \(f_n\) converge a \(f\)  in misura  se e solo se \(\forall \epsilon<0\) vale:
+          \[\lim_{n\to \infty}\mu\left(\left\{x\in X:(|f_n(x)-f(x)|)\geq\epsilon\right\}\right)=0\]
+          Ovvero se la misura dell’insieme dei punti della funzione che non sono contenuti nell’intorno tubolare di \(f\) tende a 0.</p>
+        <h6>DEFINIZIONE PRATICA:</h6>
+        <p> Una successione di funzioni converge in misura se la misura dell’insieme dei punti della funzione che non sono contenuti nell’intorno tubolare di \(f\) tende a 0.</p>
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="teoria col-md" id="conclusione">
+        <h5>IMPLICAZIONI:</h5>
+        <p>possimo osservare diverse inplicazioni:<br>
+          UNIFORME  ⇒  PUNTUALE  ⇒  	 QUASI OVUNQUE
+          IN \(L^1\) ⇒  IN MISURA</p>
+        <h5>Casi Particolari:</h5>
+        <p>QUASI OVUNQUE + se il dominio ha misura finita, a meno di restringersi a un sottoinsieme di misura arbitrariamente vicina a quella del dominio iniziale (TEOREMA DI EGOROV)  ⇒ UNIFORME</p>
+        <p> QUASI OVUNQUE + 1) se la successione ha una dominazione uniforme integrabile (TEOREMA DI CONVERGENZA DOMINATA) + 2) se la successione è crescente positiva (TEOREMA DI CONVERGENZA MONOTONA) ⇒ IN \(L^1\) </p>
+        <p>QUASI OVUNQUE + se il dominio ha misura finita ⇒ IN MISURAp</p>
+        <p>UNIFORME + se il dominio ha misura finita  ⇒ IN \(L^1\) </p>
+        <p>IN \(L^1\)  + a meno di estrarre una sottosuccessione (TEOREMA INVERSO DI CONVERGENZA DOMINATA) ⇒ QUASI OVUNQUE </p>
+      </div>
+    </div>
+</div>
 
-		<h6>DEFINIZIONE PRATICA:</h6>
-		 <p>Una successione di funzioni converge uniformemente se definitivamente per  \(n\to\infty\) il grafico di \(f_n\) è compreso nell’intorno tubolare tra  \(f(x)-\epsilon\) e \(f(x)+\epsilon\)</p>
-	  </div>
-	  <div class="teoria">
-		<h5>CONVERGENZA QUASI OVUNQUE</h5>
-		<h6>DEFINZIONE FORMALE:</h6>
-	
-		<p>Si dice che \(f_n\) converge a \(f\)  quasi ovunque  se e solo se 
-	  	\[\mu\left(\left\{x\in X\: :\; \lim_{n\to \infty}(|f_n(x)-f(x)|)\neq0\right\}\right)=0\]
-
-		Ovvero se l’insieme dei punti in cui non c’è convergenza puntuale ha misura nulla.</p>
-		
-	  	<h6>DEFINIZIONE PRATICA:</h6>
-	  	<p>Una successione di funzioni converge quasi ovunque se l’insieme dei punti in cui non c’è convergenza puntuale ha misura nulla.</p>
-	  </div>
-	  <div class="teoria">
-	  	<h5>CONVERGENZA IN \(L^1\)</h5>
-		<h6>DEFINZIONE FORMALE:</h6>
-		<p>Si dice che \(f_n\) converge a \(f\) in \(L^1\) se e solo se: 
-			\[\lim_{n\to \infty}\int_X |f_n(x)-f(x)|\:d\mu\]
-		
-		Ovvero se all’aumentare di \(n\) l’area compresa tra \(f_n\) e \(f\) tende a 0. Questo consente di avere dei picchi che si distanziano dalla funzione limite, l’importante è che abbiano area piccola.</p>
-		<h6>DEFINIZIONE PRATICA:</h6>
-		 <p>Una successione di funzioni convergono in \(L^1\) se all’aumentare di \(n\) l’area compresa tra \(f_n\) e \(f\) tende a 0.</p>
-	  </div>
-	  <div class="teoria">
-		<h5>CONVERGENZA IN MISURA</h5>
-		<h6>DEFINZIONE FORMALE:</h6>
-		<p>Si dice che \(f_n\) converge a \(f\)  in misura  se e solo se \(\forall \epsilon<0\) vale:
-							\[\lim_{n\to \infty}\mu\left(\left\{x\in X:(|f_n(x)-f(x)|)\geq\epsilon\right\}\right)=0\]																	
-		Ovvero se la misura dell’insieme dei punti della funzione che non sono contenuti nell’intorno tubolare di \(f\) tende a 0.</p>
-		
-		<h6>DEFINIZIONE PRATICA:</h6>	
-		<p>	Una successione di funzioni converge in misura se la misura dell’insieme dei punti della funzione che non sono contenuti nell’intorno tubolare di \(f\) tende a 0.</p>
-		</p>
-		</div>
-		<div class="teoria" id="conclusione">
-		<h5>IMPLICAZIONI:</h5>
-		<p>possimo osservare diverse inplicazioni:<br>UNIFORME  ⇒  PUNTUALE  ⇒  	 QUASI OVUNQUE
-			IN \(L^1\) ⇒  IN MISURA</p>
-
-		<h5>Casi Particolari:</h5>
-		<p>QUASI OVUNQUE + se il dominio ha misura finita, a meno di restringersi a un sottoinsieme di misura arbitrariamente vicina a quella del dominio iniziale (TEOREMA DI EGOROV)  ⇒ UNIFORME</p>
-
-		<p>	QUASI OVUNQUE + 1) se la successione ha una dominazione uniforme integrabile (TEOREMA DI CONVERGENZA DOMINATA) + 2) se la successione è crescente positiva (TEOREMA DI CONVERGENZA MONOTONA) ⇒ IN \(L^1\)  </p>
-
-		<p>QUASI OVUNQUE + se il dominio ha misura finita ⇒ IN MISURAp</p>
-		<p>UNIFORME + se il dominio ha misura finita  ⇒ IN \(L^1\)
-		</p>
-		<p>IN \(L^1\)  + a meno di estrarre una sottosuccessione (TEOREMA INVERSO DI CONVERGENZA DOMINATA) ⇒ QUASI OVUNQUE			</p>
-		</div>
-	</div>
-  
-  <section class="intro">
+<section class="intro">
 		<div class="column">
 		  <h4>vediamo cosa vuol dire... </h4>
 			<p>qui vi proponiamo vari esempi di convergenza di succesioni non banali </p> <p>gli esempi sono tratti dal folland</p>
 		</div>
-	</section>
-  
-  <div class="gallery">
-    <div class="thumbnail">
-      <div class="graphs">
-        <div id="ggbExemple2"></div>
+</section>
+
+<div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="miniatura">
+          <div class="graphs">
+            <div id="ggbExemple"></div>
+          </div>
+          <h4>\(f(x)=n^{-1}\chi_{(0,n)}\)</h4>
+          <div>
+            <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
       </div>
-      <h4>titolo</h4>
-      <div>
-        <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <div class="col-md-6">
+        <div class="miniatura">
+          <div class="graphs">
+            <div id="ggbExemple2"></div>
+          </div>
+          <h4>\(f(X)=\chi_{(n,n+1)}\)</h4>
+          <div>
+            <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="thumbnail">
-      <div class="graphs">
-        <div id="ggbExemple3"></div>
+		</div>
+    <div class="row">
+    	<div class="col-md-6">
+        <div class="miniatura">
+          <div class="graphs">
+            <div id="ggbExemple3"></div>
+          </div>
+          <h4>\(f(x)=n\chi_{(0,\frac{1}{n})}\)</h4>
+          <div>
+            <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
       </div>
-      <h4>titolo</h4>
-      <div>
-        <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      </div>
-    </div>
-    <div class="thumbnail">
-      <div class="graphs">
-        <div id="ggbExemple"></div>
-      </div>
-      <h4>titolo</h4>
-      <div>
-        <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      </div>
-    </div>
-  </div>
-	
-  <section class="intro">
+		</div>
+</div>
+
+<section class="intro">
     <div class="column">
       <h4>mettimo ora a confronto </h4>
       <p>qui vi proponiamo vari altri esempi di convergenza di succesioni mettodo a confronto le varie intuizioni grafice di convergenza</br>
@@ -156,129 +166,133 @@
     </div>
     <select name="select2" class="custom-select custom-select-lg" id="select" onchange="cambia()">
 		<option disabled selected="selected"  value> -- seleziona un opzione -- </option>
-      <option value="funzione1.ggb">funzione 1</option>
+      <option value="funzione1.ggb">\(f(x)=\sqrt{x+\frac{1}{n}}\)</option>
       <option  value="analisi3.ggb">funzione 2</option>
       <option value="3">funzione 3</option>
       <option value="4">funzione 4</option>
     </select>
-  </section>
+</section>
 <!-- Stats Gallery Section -->
-  <div id="confronto" class="gallery" style="display: none;">
-	<div class="thumbnail">
-	  <div class="graphs">
-	    <div id="ggbApplet" ></div>
-      </div>
-	  <h4>Convergenza puntuale</h4>
-		  <p class="tag"><a class="btn btn-primary" data-toggle="collapse" href="#collapseExample"  aria-expanded="false" aria-controls="collapseExample">
-		leggi definizione
-	  </a></p>
-		<div class="collapse" id="collapseExample">
-		  <div class="definizione card card-body">
-		    <p>DEFINZIONE FORMALE:</p>
-		    <p>Si dice che \(f_n\) converge puntualmente a \(f\:su\:X  ⇔  ∀ x\in X\;vale\;(|f_n(x)-f(x)|)=0 \)
-		      Ovvero se in ogni punto x il limite della successione di funzioni è il valore della funzione \(f\) in \(x\). </p>
-			<p> DEFINIZIONE PRATICA:</p>
-			  <p>Una successione di funzioni converge puntualmente se per ogni punto \(x\) il limite della successione di funzioni corrisponde al valore della funzione \(f\) in \(x\)</p>
+  <div id="confronto" class="container" style="display: none;">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="miniatura">
+          <div class="graphs">
+            <div id="ggbApplet" ></div>
           </div>
-		  </div>
-		 
-		<div>
-	  		<p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-		</div>
-    </div>
-	<div class="thumbnail">
-	  <div class="graphs">
-	    <div id="ggbApplet2" ></div>
-      </div>
-	  <h4>Convergenza Uniforme</h4>
-
-	  <p class="tag"><a class="btn btn-primary" data-toggle="collapse" href="#collapseExample2"  aria-expanded="false" aria-controls="collapseExample"> leggi definizione </a></p>
-	  <div class="collapse" id="collapseExample2">
-	    <div class="card card-body">
-	      <p>DEFINZIONE FORMALE:
-	        Si dice che fn converge puntualmente a f su X  ⇔  ∀ x ∈ X vale 
-	        (|fnx-fx|)=0 
-	        Ovvero se in ogni punto x il limite della successione di funzioni è il valore della funzione f in x.
-	        </p>
-			<p>DEFINIZIONE PRATICA:
-	        Una successione di funzioni converge puntualmente se per ogni punto x il limite della successione di funzioni corrisponde al valore della funzione f in x</p>
+          <h4>Convergenza puntuale</h4>
+          <p class="tag"><a class="btn btn-primary" data-toggle="collapse" href="#collapseExample"  aria-expanded="false" aria-controls="collapseExample"> leggi definizione </a></p>
+          <div class="collapse" id="collapseExample">
+            <div class="definizione card card-body">
+							<p>Si dice che \(f_n\) converge puntualmente a \(f\) su \(X\) se e solo se \(\forall\;x\in X\) vale:
+			          \[(|f_n(x)-f(x)|)=0\]
+			          Ovvero se in ogni punto \(x\) il limite della successione di funzioni è il valore della funzione \(f\) in \(x\).</p>
+			        <h6>DEFINIZIONE PRATICA:</h6>
+			        <p>Una successione di funzioni converge puntualmente se per ogni punto \(x\) il limite della successione di funzioni corrisponde al valore della funzione \(f\) in \(x\)</p>
+            </div>
+          </div>
+          <div>
+            <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
         </div>
       </div>
-	  
-	  <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
-	<div class="thumbnail">
-	  <div class="graphs">
-	    <div id="ggbApplet3" ></div>
-      </div>
-	  <h4>Convergenza quasi ovunque</h4>
-
-	  <p class="tag"><a class="btn btn-primary" data-toggle="collapse" href="#collapseExample3"  aria-expanded="false" aria-controls="collapseExample"> leggi definizione </a></p>
-	  <div class="collapse" id="collapseExample3">
-	    <div class="card card-body">
-	      <p>DEFINZIONE FORMALE:
-	        Si dice che fn converge puntualmente a f su X  ⇔  ∀ x ∈ X vale 
-	        (|fnx-fx|)=0 
-	        Ovvero se in ogni punto x il limite della successione di funzioni è il valore della funzione f in x.
-	        
-	        DEFINIZIONE PRATICA:
-	        Una successione di funzioni converge puntualmente se per ogni punto x il limite della successione di funzioni corrisponde al valore della funzione f in x </p>
+      <div class="col-md-6">
+        <div class="miniatura">
+          <div class="graphs">
+            <div id="ggbApplet2" ></div>
+          </div>
+          <h4>Convergenza Uniforme</h4>
+          <p class="tag"><a class="btn btn-primary" data-toggle="collapse" href="#collapseExample2"  aria-expanded="false" aria-controls="collapseExample"> leggi definizione </a></p>
+          <div class="collapse" id="collapseExample2">
+            <div class="card card-body">
+							<h6>DEFINZIONE FORMALE:</h6>
+			        <p>Si dice che \(f_n\) converge uniformemente a \(f\) su \(X\)  se e solo se  \(\forall\;x\in X\) vale;
+			          \[\lim_{n\to\infty}\left(\sup_{x\in X}|f_n(x)-f(x)|\right) \]
+			          Ovvero se definitivamente per \(n\to\infty\) il grafico di \(f_n\) è compreso nell’intorno tubolare tra \(f(x)-\epsilon\) e \(f(x)+\epsilon\)</p>
+			        <h6>DEFINIZIONE PRATICA:</h6>
+			        <p>Una successione di funzioni converge uniformemente se definitivamente per  \(n\to\infty\) il grafico di \(f_n\) è compreso nell’intorno tubolare tra  \(f(x)-\epsilon\) e \(f(x)+\epsilon\)</p>
+            </div>
+          </div>
+          <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
       </div>
-	  
-	  <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     </div>
-	<div class="thumbnail">
-	  <div class="graphs">
-	    <div id="ggbApplet4" ></div>
-      </div>
-	  <h4>Convergenza in L^1</h4>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="miniatura">
+          <div class="graphs">
+            <div id="ggbApplet3" ></div>
+          </div>
+          <h4>Convergenza quasi ovunque</h4>
+          <p class="tag"><a class="btn btn-primary" data-toggle="collapse" href="#collapseExample3"  aria-expanded="false" aria-controls="collapseExample"> leggi definizione </a></p>
+          <div class="collapse" id="collapseExample3">
+            <div class="card card-body">
+							<h6>DEFINZIONE FORMALE:</h6>
+			        <p>Si dice che \(f_n\) converge a \(f\)  quasi ovunque  se e solo se
+			          \[\mu\left(\left\{x\in X\: :\; \lim_{n\to \infty}(|f_n(x)-f(x)|)\neq0\right\}\right)=0\]
 
-	  <p class="tag"><a class="btn btn-primary" data-toggle="collapse" href="#collapseExample4"  aria-expanded="false" aria-controls="collapseExample"> leggi definizione </a></p>
-	  <div class="collapse" id="collapseExample4">
-	    <div class="card card-body">
-	      <p>DEFINZIONE FORMALE:
-	        Si dice che fn converge puntualmente a f su X  ⇔  ∀ x ∈ X vale 
-	        (|fnx-fx|)=0 
-	        Ovvero se in ogni punto x il limite della successione di funzioni è il valore della funzione f in x.
-	        
-	        DEFINIZIONE PRATICA:
-	        Una successione di funzioni converge puntualmente se per ogni punto x il limite della successione di funzioni corrisponde al valore della funzione f in x </p>
+			          Ovvero se l’insieme dei punti in cui non c’è convergenza puntuale ha misura nulla.</p>
+			        <h6>DEFINIZIONE PRATICA:</h6>
+			        <p>Una successione di funzioni converge quasi ovunque se l’insieme dei punti in cui non c’è convergenza puntuale ha misura nulla.</p>
+            </div>
+          </div>
+          <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
       </div>
-	  
-	  <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
-	<div class="thumbnail">
-	  <div class="graphs">
-	    <div id="ggbApplet5" ></div>
-      </div>
-	  <h4>Convergenza in misura</h4>
+      <div class="col-md-6">
+        <div class="miniatura">
+          <div class="graphs">
+            <div id="ggbApplet4" ></div>
+          </div>
+          <h4>Convergenza in \(L^1\)</h4>
+          <p class="tag"><a class="btn btn-primary" data-toggle="collapse" href="#collapseExample4"  aria-expanded="false" aria-controls="collapseExample"> leggi definizione </a></p>
+          <div class="collapse" id="collapseExample4">
+            <div class="card card-body">
+							<h5>CONVERGENZA IN \(L^1\)</h5>
+			        <h6>DEFINZIONE FORMALE:</h6>
+			        <p>Si dice che \(f_n\) converge a \(f\) in \(L^1\) se e solo se:
+			          \[\lim_{n\to \infty}\int_X |f_n(x)-f(x)|\:d\mu\]
 
-	  <p class="tag"><a class="btn btn-primary" data-toggle="collapse" href="#collapseExample5"  aria-expanded="false" aria-controls="collapseExample"> leggi definizione </a></p>
-	  <div class="collapse" id="collapseExample5">
-	    <div class="card card-body">
-	      <p>DEFINZIONE FORMALE:
-	        Si dice che fn converge puntualmente a f su X  ⇔  ∀ x ∈ X vale 
-	        (|fnx-fx|)=0 
-	        Ovvero se in ogni punto x il limite della successione di funzioni è il valore della funzione f in x.
-	        
-	        DEFINIZIONE PRATICA:
-	        Una successione di funzioni converge puntualmente se per ogni punto x il limite della successione di funzioni corrisponde al valore della funzione f in x </p>
+			          Ovvero se all’aumentare di \(n\) l’area compresa tra \(f_n\) e \(f\) tende a 0. Questo consente di avere dei picchi che si distanziano dalla funzione limite, l’importante è che abbiano area piccola.</p>
+			        <h6>DEFINIZIONE PRATICA:</h6>
+			        <p>Una successione di funzioni convergono in \(L^1\) se all’aumentare di \(n\) l’area compresa tra \(f_n\) e \(f\) tende a 0.</p>
+            </div>
+          </div>
+          <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
       </div>
-	  
-	  <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     </div>
-	
-  </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="miniatura">
+          <div class="graphs">
+            <div id="ggbApplet5" ></div>
+          </div>
+          <h4>Convergenza in misura</h4>
+          <p class="tag"><a class="btn btn-primary" data-toggle="collapse" href="#collapseExample5"  aria-expanded="false" aria-controls="collapseExample"> leggi definizione </a></p>
+          <div class="collapse" id="collapseExample5">
+            <div class="card card-body">
+							<h6>DEFINZIONE FORMALE:</h6>
+							<p>Si dice che \(f_n\) converge a \(f\)  in misura  se e solo se \(\forall \epsilon<0\) vale:
+								\[\lim_{n\to \infty}\mu\left(\left\{x\in X:(|f_n(x)-f(x)|)\geq\epsilon\right\}\right)=0\]
+								Ovvero se la misura dell’insieme dei punti della funzione che non sono contenuti nell’intorno tubolare di \(f\) tende a 0.</p>
+							<h6>DEFINIZIONE PRATICA:</h6>
+							<p> Una successione di funzioni converge in misura se la misura dell’insieme dei punti della funzione che non sono contenuti nell’intorno tubolare di \(f\) tende a 0.</p>
+							</p>
+            </div>
+          </div>
+          <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+</div>
+</div>
   <!-- Footer Section -->
 	  <footer id="contact">
 		<div class="copyright">&copy;2021 - <strong>GRID</strong></div>
   </footer>
 	  <!-- Copyrights Section -->
 
-	</div>
+</div>
 <!-- Main Container Ends -->
 
 </body>

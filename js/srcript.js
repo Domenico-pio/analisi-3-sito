@@ -178,6 +178,7 @@ var parameters5 = {
 "filename":fileName,
 };
 var parametersEx = {
+"id":"appletEx",
 
 "scaleContainerClass": 'graphs',
 "showMenuBar":false,
@@ -212,6 +213,7 @@ var parametersEx = {
 "filename":"geo/esempio1.ggb",
 };
 var parametersEx2 = {
+"id":"appletEx2",
 
 "scaleContainerClass": 'graphs',
 "showMenuBar":false,
@@ -234,7 +236,7 @@ var parametersEx2 = {
 "showFullscreenButton":false,
 "scale":1,
 "disableAutoScale":false,
-"allowUpscale":false,
+"allowUpscale":true,
 "clickToLoad":false,
 "appName":"classic",
 "buttonRounding":0.7,
@@ -246,6 +248,7 @@ var parametersEx2 = {
 "filename":"geo/esempio2.ggb",
 };
 var parametersEx3 = {
+"id":"appletEX3",
 
 "scaleContainerClass": 'graphs',
 "showMenuBar":false,
@@ -268,7 +271,7 @@ var parametersEx3 = {
 "showFullscreenButton":false,
 "scale":1,
 "disableAutoScale":false,
-"allowUpscale":false,
+"allowUpscale":true,
 "clickToLoad":false,
 "appName":"classic",
 "buttonRounding":0.7,
@@ -289,13 +292,14 @@ var applet5 = new GGBApplet(parameters5, views);
 var appletEx= new GGBApplet(parametersEx, views);
 var appletEx2= new GGBApplet(parametersEx2, views);
 var appletEx3= new GGBApplet(parametersEx3, views);
+
 function plots(){
 		//console.log(parameters);
 		//console.log(parameters2);
 		applet.setPreviewImage('data:image/gif;base64,R0lGODlhAQABAAAAADs=','https://www.geogebra.org/images/GeoGebra_loading.png','https://www.geogebra.org/images/applet_play.png');
-		applet2.setPreviewImage('data:image/gif;base64,R0lGODlhAQABAAAAADs=','https://www.geogebra.org/images/GeoGebra_loading.png','https://www.geogebra.org/images/applet_play.png');		
-		applet3.setPreviewImage('data:image/gif;base64,R0lGODlhAQABAAAAADs=','https://www.geogebra.org/images/GeoGebra_loading.png','https://www.geogebra.org/images/applet_play.png');		
-		applet4.setPreviewImage('data:image/gif;base64,R0lGODlhAQABAAAAADs=','https://www.geogebra.org/images/GeoGebra_loading.png','https://www.geogebra.org/images/applet_play.png');	
+		applet2.setPreviewImage('data:image/gif;base64,R0lGODlhAQABAAAAADs=','https://www.geogebra.org/images/GeoGebra_loading.png','https://www.geogebra.org/images/applet_play.png');
+		applet3.setPreviewImage('data:image/gif;base64,R0lGODlhAQABAAAAADs=','https://www.geogebra.org/images/GeoGebra_loading.png','https://www.geogebra.org/images/applet_play.png');
+		applet4.setPreviewImage('data:image/gif;base64,R0lGODlhAQABAAAAADs=','https://www.geogebra.org/images/GeoGebra_loading.png','https://www.geogebra.org/images/applet_play.png');
 		applet5.setPreviewImage('data:image/gif;base64,R0lGODlhAQABAAAAADs=','https://www.geogebra.org/images/GeoGebra_loading.png','https://www.geogebra.org/images/applet_play.png');
 		applet.inject('ggbApplet');
 		applet2.inject('ggbApplet2');
@@ -305,18 +309,19 @@ function plots(){
 	}
 
 function cambia(){
-	
+
 	var gallery=document.getElementById("confronto")
 	if(frist){
+		var item=document.getElementById("select").value;
+		fileName="geo/"+item;
 		gallery.style.display="";
-		
+
 		plots();
 		frist=false;
 		console.log(frist);
 	}else{
 		//gallery.style.display="";
-		var item=document.getElementById("select").value;
-		fileName="geo/"+item;
+
 		//console.log(frist);
 		//plots();
 		applet.openFile(fileName);
@@ -332,7 +337,5 @@ window.onload=function (){
 	appletEx2.inject('ggbExemple2');
 	appletEx3.inject('ggbExemple3');
 	//plots();
+
 };
-
-
-
