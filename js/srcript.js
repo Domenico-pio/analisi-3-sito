@@ -308,13 +308,15 @@ function writeText(xml,option) {
 		var formula=xmlDoc.getElementsByTagName("formula")[option-1].childNodes[0];
 		var file=xmlDoc.getElementsByTagName("fileName")[option-1].childNodes[0];
 		//document.getElementById("formula").innerHTML=formula.nodeValue='\\[\\f_n(x)=\\sqrt{x+\\frac{1}{n}}\\]';
-		document.getElementById("formula").innerHTML=formula.nodeValue;
+
 		MathJax.typesetPromise().then(() => {
   	// modify the DOM here
-		for (var i = 1; i < 6; i++) {
-			console.log(text[i-1].childNodes[0].nodeValue);
-			document.getElementById("ggbApplet"+i+"text").innerHTML= text[i-1].childNodes[0].nodeValue;
-		}
+      document.getElementById("formula-col").style.display="";
+      document.getElementById("formula").innerHTML=formula.nodeValue;
+  		for (var i = 1; i < 6; i++) {
+  			console.log(text[i-1].childNodes[0].nodeValue);
+  			document.getElementById("ggbApplet"+i+"text").innerHTML= text[i-1].childNodes[0].nodeValue;
+  		}
   	MathJax.typesetPromise();
 		}).catch((err) => console.log(err.message));
 
