@@ -86,6 +86,10 @@ svg {
 	float: none;
 	width: 98%
 }*/
+#domanda h6 {
+	margin: 0px;
+	font-weight:600;
+}
 #risposta{
 	background-color: #F8F8F8;
 	border: 10px solid #F8F8F8;
