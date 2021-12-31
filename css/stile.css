@@ -6,7 +6,7 @@
 .header h1{
 	font-size: 32px;
 }
-.col-md-6{
+.col-md-6, .col-md{
 	padding:10px;
 }
 .graphs{
@@ -76,7 +76,8 @@ svg {
 }
 .teoria{
 	background-color: #F8F8F8;
-	border: 10px solid white;
+	border: 10px solid #F8F8F8;
+	border-radius: 3px;
 }
 .last_line{
 	border-bottom: medium solid #6dc7d0;
@@ -85,3 +86,14 @@ svg {
 	float: none;
 	width: 98%
 }*/
+#risposta{
+	background-color: #F8F8F8;
+	border: 10px solid #F8F8F8;
+	text-align: center;
+	padding-bottom: 20px;
+	border-radius: 3px;
+	padding-top: 20px;
+}
+#contact{
+	margin-top: 15px
+}

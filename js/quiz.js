@@ -1,13 +1,19 @@
 function check() {
   var risp=document.getElementById("risposta");
+  var opzioni= document.getElementsByName("risp");
+  console.log(opzioni[0].name);
+  for (var i = 0; i < opzioni.length; i++) {
+    opzioni[i].disabled=true;
+  }
+
   if(document.getElementById("correct").checked){
 
     document.getElementById("risultato").innerHTML="risposta correta";
-    console.log(risp.firstChild.innerHTML);
+
   }
   else {
     document.getElementById("risultato").innerHTML="risposta sbagliata";
-    console.log(risp.firstChild.innerHTML);
+
   };
   risp.style.display="";
 }

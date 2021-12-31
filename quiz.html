@@ -40,15 +40,18 @@
     </section>
     <div class="container">
       <div class="row">
-        <div class="col-md">
+        <div class="col-md ">
           <a class="btn btn-secondary btn-md" href="index.html" role="button">Torna alla teoria</a>
         </div>
       </div>
-      <div class=" teoria row">
-        <div class="miniatura col-md">
-          <div class="graphs">
-            <div id="ggbquiz"></div>
+      <div class=" row">
+        <div class="col-md">
+          <div class="miniatura">
+            <div class="graphs">
+              <div id="ggbquiz"></div>
+            </div>
           </div>
+
         </div>
       </div>
       <div class="row">
@@ -71,7 +74,9 @@
           </div>
           <button type="button" class="btn btn-info btn-sm" onclick="check();">invia</button>
         </div>
-        <div id="risposta" class="teoria column" style="display:none;">
+      </div>
+      <div class="row">
+        <div id="risposta" class="col-md" style="display:none;">
           <h5 id="risultato"></h5>
           <p>spiegazione</p>
         </div>
@@ -79,6 +84,9 @@
 
     </div>
 
+    <footer id="contact">
+    	<div class="copyright">&copy;2021 - <strong>GRID</strong></div>
+    </footer>
 
   </div>
   </body>
