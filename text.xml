@@ -5,18 +5,24 @@
     <fileName>funzione1.ggb</fileName>
     <formula>\(f_n(x)=\sqrt{x+\frac{1}{n}}\)</formula>
     <text>
-      <desc>Graficamente si vede che \(f_n(x)\) è compresa in una fascia \( f_(x) −\epsilon, f(x)+\epsilon\) con epsilon arbitrario, maggiore di 0 e \(f(x) =|x|\).</desc>
+      <!-- <desc>Graficamente si vede che \(f_n(x)\) è compresa in una fascia \( f_(x) −\epsilon, f(x)+\epsilon\) con epsilon arbitrario, maggiore di 0 e \(f(x) =|x|\).</desc>
       <desc>Graficamente vediamo che la convergenza vale in ogni punto di \(\Re\)</desc>
       <desc>Graficamente vediamo che la convergenza vale in ogni punto di \(\Re\)</desc>
       <desc>Graficamente si può vedere che \(f_n(x)\) si discostano da \(f(x)\) solo per valori di x presi in un intorno arbitrario di \(x=0\) che di conseguenza hanno misura nulla. </desc>
       <desc>Graficamente si vede che converge anche in \(L^1\) dato che l’area compresa tra \(f(x)=|x|\) e \(f_n(x)\) tende a zero al crescere di \(n\).</desc>
+      <desc>Graficamente si vede che \(f_n(x)\) è compresa in una fascia \( f_(x) −\epsilon, f(x)+\epsilon\) con epsilon arbitrario, maggiore di 0 e \(f(x) =|x|\).</desc> -->
+      <desc>Converge uniformemente a \(f(x)=|x|\) su tutto l’asse reale. Infatti: \(lim_{n\to\infty}(sup_{x\in\mathscr{R}}|f_n(x)-f(x)|)=lim_{n\to\infty}(sup_{x\in\mathscr{R}}|\sqrt{x^2+1/n}-|x||)=0\) Quindi, vedo direttamente dalla definizione di convergenza uniforme che tale successione converge uniformemente a \(|x|\)</desc>
+      <desc>per i teoremi visti: converge anche puntualmente e quasi ovunque, grazie alla convergenza uniforme. Graficamente vediamo che la convergenza vale in ogni punto di \(\Re\)</desc>
+      <desc>per i teoremi visti: converge anche puntualmente e quasi ovunque, grazie alla convergenza uniforme. Graficamente vediamo che la convergenza vale in ogni punto di \(\Re\)</desc>
+      <desc>Graficamente si vede che converge anche in \(L^1\) dato che l’area compresa tra \(f(x)=|x|\) e \(f_n(x)\) tende a zero al crescere di \(n\). Verifico le ipotesi del teorema di convergenza dominata per poter calcolare:\( lim_{n\to\infty}{\int_R{|f_n(x)-f(x)| dx}}=|x| \)scambiando limite e integrale. Verifico, quindi, le ipotesi: \[\begin{cases}1) lim_{n\to\infty}{f_n(x)} esiste ed è uguale a f(x),\\ ciò è verificato perchè: lim_{n\to\infty}{f_n(x)}=lim_{n\to\infty}{\sqrt{x^2+\frac{1}{n}}}=|x|=f(x). \\2) Esiste una funzione g(x) \in l(\mu) tale che |f_n(x)|\leq g(x) per ogni x \in \Re \end{cases}\]. Ciò vale poiché: \(|{\sqrt{x^2+\frac{1}{n}}}| \leq {\sqrt{x^2+2}} =g(x)\). Calcolando, quindi, l'integrale e scambiando limite e integrale ottengo che:\(\lim_{n\to\infty}{\int_R{|f_n(x)-f(x)|dx}}={\int_R{lim_{n\to\infty}|f_n(x)-f(x)|dx}}={\int_R{lim_{n\to\infty}|\sqrt{x^2+\frac{1}{n}}-|x||dx}}={\int_R{||x|-|x|| dx}}={\int_R{0 dx}}=0\) Perciò vi è convergenza in \(L^1\). </desc>
+      <desc>Graficamente si può vedere che \(f_n(x)\) si discostano da \(f(x)\) solo per valori di x presi in un intorno arbitrario di \(x=0\) che di conseguenza hanno misura nulla. abbiamo anche la convergenza in misura, in quanto è provata la convergenza uniforme.</desc>
     </text>
-    
+
   </funzione>
   <funzione>
     <option value="">2</option>
     <fileName>funzione2.ggb</fileName>
-    <formula> </formula>
+    <formula></formula>
     <text>
       <desc>1</desc>
       <desc>2</desc>

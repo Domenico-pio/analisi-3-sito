@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://cdn.geogebra.org/apps/deployggb.js"></script>
+	<script src="js/quiz.js"></script>
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap-4.4.1.js"></script>
+
+	<!--latex configuration-->
+	<script type="text/x-mathjax-config">
+		MathJax = {
+  			loader: {load: ['ui/lazy']}
+			};
+	</script>
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-svg.js"></script>
+	<link rel="stylesheet" href="css/stile.css"  type="text/css">
+	<link href="css/simpleGridTemplate.css" rel="stylesheet" type="text/css">
+
+	<link href="css/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
+
+	<title>Quiz</title>
+</head>
+  <body>
+    <div class="container">
+    	  <!-- Header -->
+    <header class="header">
+    		<h1 class="logo">CONVERGENZE</h1>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="intro">
+    		<div class="column">
+    			<h3> Prova ora tu ... </h3>
+    	</div>
+    </section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md">
+          <a class="btn btn-secondary btn-md" href="index.html" role="button">Torna alla teoria</a>
+        </div>
+      </div>
+      <div class=" teoria row">
+        <div class="miniatura col-md">
+          <div class="graphs">
+            <div id="ggbquiz"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="risposte col-md ">
+          <div class="form-check">
+            <input name="risp" class="form-check-input" type="radio" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">Default checkbox </label>
+          </div>
+          <div class="form-check">
+            <input name="risp" id="correct" class="form-check-input" type="radio" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">Default checkbox </label>
+          </div>
+          <div class="form-check">
+            <input name="risp" class="form-check-input" type="radio" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">Default checkbox </label>
+          </div>
+          <div class="form-check">
+            <input name="risp" class="form-check-input" type="radio" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">Default checkbox </label>
+          </div>
+          <button type="button" class="btn btn-info btn-sm" onclick="check();">invia</button>
+        </div>
+        <div id="risposta" class="teoria column" style="display:none;">
+          <h5 id="risultato"></h5>
+          <p>spiegazione</p>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+  </body>
+</html>
