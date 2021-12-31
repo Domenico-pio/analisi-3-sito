@@ -315,7 +315,9 @@ function writeText(xml,option) {
       document.getElementById("formula").innerHTML=formula.nodeValue;
   		for (var i = 1; i < 6; i++) {
   			console.log(text[i-1].childNodes[0].nodeValue);
-  			document.getElementById("ggbApplet"+i+"text").innerHTML= text[i-1].childNodes[0].nodeValue;
+        var temp = text[i-1].childNodes[0].nodeValue.replace(/\u0025\u0024n\u0024\u0025/gi,"<br>");
+  			document.getElementById("ggbApplet"+i+"text").innerHTML= temp;
+        console.log(temp);
   		}
   	MathJax.typesetPromise();
 		}).catch((err) => console.log(err.message));
