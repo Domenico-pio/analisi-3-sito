@@ -3,7 +3,7 @@
   <funzione>
     <option value="">1</option>
     <fileName>funzione1.ggb</fileName>
-    <formula>\(f_n(x)=\sqrt{x+\frac{1}{n}}\)</formula>
+    <formula>\(f_n(x)=\sqrt{x^2+\frac{1}{n}}\)</formula>
     <text>
       <!-- <desc>Graficamente si vede che \(f_n(x)\) è compresa in una fascia \( f_(x) −\epsilon, f(x)+\epsilon\) con epsilon arbitrario, maggiore di 0 e \(f(x) =|x|\).</desc>
       <desc>Graficamente vediamo che la convergenza vale in ogni punto di \(\Re\)</desc>
