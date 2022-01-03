@@ -78,6 +78,7 @@ svg {
 	background-color: #F8F8F8;
 	border: 10px solid #F8F8F8;
 	border-radius: 3px;
+	height: 100%;
 }
 .last_line{
 	border-bottom: medium solid #6dc7d0;
