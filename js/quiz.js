@@ -1,22 +1,36 @@
 function check() {
-  var risp=document.getElementById("risposta");
+  var risp=document.getElementsByClassName("risposta");
   var opzioni= document.getElementsByName("risp");
+  var opzioni2= document.getElementsByName("risp2");
   console.log(opzioni[0].name);
   for (var i = 0; i < opzioni.length; i++) {
     opzioni[i].disabled=true;
+    opzioni2[i].disabled=true;
   }
 
   if(document.getElementById("correct").checked){
 
-    document.getElementById("risultato").innerHTML="risposta correta";
+    document.getElementById("risultato").innerHTML="risposta corretta";
 
   }
   else {
     document.getElementById("risultato").innerHTML="risposta sbagliata";
+    document.getElementById("rispcor").style.display="";
 
   };
-  risp.style.display="";
+  if(document.getElementById("correct2").checked){
+
+    document.getElementById("risultato2").innerHTML="risposta corretta";
+
+  }
+  else {
+    document.getElementById("risultato2").innerHTML="risposta sbagliata";
+    document.getElementById("rispcor2").style.display="";
+  };
+  for(i=0; i<risp.length;i++)
+  risp[i].style.display="";
 }
+
 
 var parametersQuiz = {
 "id":"applet2",

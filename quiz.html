@@ -56,29 +56,70 @@
       </div>
       <div class="row">
         <div class="col-md">
-          <div id="domanda">
-            <h6>inserire la domanda qua</h6>
+          <div class="domanda">
+            <h5>Si consideri la successione di funzioni \(f_n(x)=\left(\frac{1}{n}+\sin(x)\right)^n\) \(x\in[0,\pi] \)  il cui grafico è riportato sopra</h5>
           </div>
         </div>
       </div>
+			<div class="row">
+				<div class="col-md">
+					<div class="domanda"><h6>Questa successione converge...</h6></div>
+				</div>
+			</div>
       <div class="row">
         <div class="col-md ">
           <div class="risposte">
             <div class="form-check">
               <input name="risp" class="form-check-input" type="radio" value="" id="flexCheckDefault">
-              <label class="form-check-label" for="flexCheckDefault">Default checkbox </label>
+              <label class="form-check-label" for="flexCheckDefault">In Misura, Puntualmente, ma non Quasi ovunque  </label>
             </div>
             <div class="form-check">
               <input name="risp" id="correct" class="form-check-input" type="radio" value="" id="flexCheckDefault">
-              <label class="form-check-label" for="flexCheckDefault">Default checkbox </label>
+              <label class="form-check-label" for="flexCheckDefault">Puntualmente, Quasi ovunque , in \(L^1\) e in Misura </label>
             </div>
             <div class="form-check">
               <input name="risp" class="form-check-input" type="radio" value="" id="flexCheckDefault">
-              <label class="form-check-label" for="flexCheckDefault">Default checkbox </label>
+              <label class="form-check-label" for="flexCheckDefault">Uniformemente, Puntualmente e in \(L^1\) </label>
             </div>
             <div class="form-check">
               <input name="risp" class="form-check-input" type="radio" value="" id="flexCheckDefault">
-              <label class="form-check-label" for="flexCheckDefault">Default checkbox </label>
+              <label class="form-check-label" for="flexCheckDefault">Uniformemente, Puntualmente, Quasi ovunque, in \(L^1\) e in Misura </label>
+            </div>
+          </div>
+        </div>
+      </div>
+			<div class="row">
+				<div  class="col-md risposta" style="display:none;">
+					<h5 id="risultato"></h5>
+					<p id="rispcor" style="display:none">
+						La risposta corretta è:	Puntualmente, Quasi ovunque , in \(L^1\) e in Misura
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md">
+					<div class="domanda"><h6>Converge puntualmente a:</h6></div>
+				</div>
+			</div>
+
+			<div class="row">
+        <div class="col-md ">
+          <div class="risposte">
+            <div class="form-check">
+              <input name="risp2" id="correct2" class="form-check-input" type="radio" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">\(f(x)=\begin{cases}0\quad\text{if}\;x\neq\frac{\pi}{2}\\e\quad\text{if}\;x=\frac{\pi}{2}\end{cases}\)</label>
+            </div>
+            <div class="form-check">
+              <input name="risp2"  class="form-check-input" type="radio" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">\(f(x)=0\)</label>
+            </div>
+            <div class="form-check">
+              <input name="risp2" class="form-check-input" type="radio" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">\(f(x)=\begin{cases}e\quad\text{if}\;x\neq\frac{\pi}{2}\\0\quad\text{if}\;x=\frac{\pi}{2}\end{cases}\)</label>
+            </div>
+            <div class="form-check">
+              <input name="risp2" class="form-check-input" type="radio" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">Nessuna delle precedenti </label>
             </div>
           </div>
         </div>
@@ -89,12 +130,23 @@
         </div>
       </div>
       <div class="row">
-        <div id="risposta" class="col-md" style="display:none;">
-          <h5 id="risultato"></h5>
-          <p>spiegazione</p>
+        <div  class="col-md risposta " style="display:none;">
+          <h5 id="risultato2"></h5>
+					<p id="rispcor2"  style="display:none">
+					 La risposta corretta è:	\(f(x)=\begin{cases}0\quad\text{if}\;x\neq\frac{\pi}{2}\\e\quad\text{if}\;x=\frac{\pi}{2}\end{cases}\)
+					</p>
+					</p>
         </div>
       </div>
-
+			<div class="row">
+				<div class="col-md risposta" style="display:none;">
+					<div>
+						<p>La successione converge Puntualmente a \(f(x)=\begin{cases}0\quad\text{if}\;x\neq\frac{\pi}{2}\\e\quad\text{if}\;x=\frac{\pi}{2}\end{cases}\) <br> perché calcolando
+						il \(\lim{n\to\infty}{f_(x)}\) separatamente per \(x=\frac{\pi}{2}\) e per \(x\neq\frac{\pi}{2}\) si ottiene rispettivamente \(e\) e \(0\). Converge quindi qausi ovunque a \(g(x)=0\). <br>
+					 non converge unifomemente a \(f(x)\) poiché questa è discontinua mentre le \(f_n(x)\) sono continue. Applicando la definizione si verifica la convergenza in \(L^1\:(0,\pi)\) che inplica quinid la convergenza in misura.</p>
+					</div>
+				</div>
+			</div>
     </div>
 
     <footer id="contact">
